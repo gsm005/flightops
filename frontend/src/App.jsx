@@ -32,21 +32,21 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/dashboard" element={<Dashboard />}>
+        <Route path="/" element={<Dashboard />}>
           <Route exact path="" element={<Dash />}>
             <Route path="" element={<DashHome />} />
             <Route path="analytics" element={<Analytics />} />
             <Route path="management" element={<Management />} />
           </Route>
-          <Route exact path="crowd" element={<Crowd />}>
+          <Route exact path="routes" element={<Crowd />}>
             <Route path="" element={<CrowdHome />} />
             <Route path="analytics" element={<CrowdAnalytics />} />
           </Route>
-          <Route exact path="crime" element={<Crime />}>
+          <Route exact path="airport-health" element={<Crime />}>
             <Route path="" element={<CrimeHome />} />
             <Route path="analytics" element={<CrimeAnalytics />} />
           </Route>
-          <Route exact path="inoffice" element={<Inoffice />}>
+          <Route exact path="manage" element={<Inoffice />}>
             <Route path="" element={<InofficeHome />} />
             <Route path="analytics" element={<InofficeAnalytics />} />
             <Route path="employees" element={<Employees />} />

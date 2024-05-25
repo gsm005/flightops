@@ -78,13 +78,13 @@ const data = {
   labels: labels,
   datasets: [
     {
-      label: "Crowd",
+      label: "Routes",
       data: labels.map(() => faker.datatype.number(NUMBER_CFG)),
       borderColor: "red",
       backgroundColor: "rgba(255, 99, 132, 0.5)",
     },
     {
-      label: "Crime Reported",
+      label: "Routes available",
       data: labels.map(() => faker.datatype.number(NUMBER_CFG)),
       borderColor: "blue",
       backgroundColor: "rgba(53, 162, 235, 0.5)",
@@ -95,7 +95,7 @@ const rdata = {
   labels: labels,
   datasets: [
     {
-      label: "Crowd",
+      label: "routes",
       data: labels.map(() => faker.datatype.number(NUMBER_CFG)), // Use faker for values
       borderColor: "red",
       backgroundColor: "rgba(255, 99, 132, 0.5)",

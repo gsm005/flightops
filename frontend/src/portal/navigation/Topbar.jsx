@@ -109,12 +109,12 @@ export function Topbar(props) {
                         <Link to="" className={classes.link} onClick={()=>navigate('dash')}>
                             <Text fz="lg">Dash</Text>
                         </Link>
-                        <Link to="crowd" className={classes.link} onClick={()=>navigate('crowd')}>
+                        <Link to="routes" className={classes.link} onClick={()=>navigate("routes")}>
                             <Text fz="lg">Routes</Text>
                         </Link>
-                        <Link to="crime" className={classes.link} onClick={()=>navigate('crime')}>
+                        <Link to="airport-health" className={classes.link} onClick={()=>navigate("airport-health")}>
                             <Text fz="lg">Aircraft Health</Text>
-                        </Link><Link to="inoffice" className={classes.link} onClick={()=>navigate('inoffice')}>
+                        </Link><Link to="manage" className={classes.link} onClick={()=>navigate("manage")}>
                             <Text fz="lg">Management</Text>
                         </Link>
                     </Group>
@@ -142,12 +142,12 @@ export function Topbar(props) {
                         <Link to="" className={classes.link}>
                             <Text fz="lg">Dash</Text>
                         </Link>
-                        <Link to="crowd" className={classes.link}>
+                        <Link to="routes" className={classes.link}>
                             <Text fz="lg">Crowd</Text>
                         </Link>
-                        <Link to="crime" className={classes.link}>
+                        <Link to="airport-health" className={classes.link}>
                             <Text fz="lg">Crime</Text>
-                        </Link><Link to="inoffice" className={classes.link}>
+                        </Link><Link to="manage" className={classes.link}>
                             <Text fz="lg">Inoffice</Text>
                         </Link>
                     </Box>

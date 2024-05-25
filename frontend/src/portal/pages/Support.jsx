@@ -9,30 +9,28 @@ export function Support() {
                 <h1>About Us</h1>
             </header>
 
-            <section class="content">
+            <section className="content">
                 <h2>Our Mission</h2>
-                <p>In response to the significant issue of crowd management and crimes in the country, our project aims to revolutionize safety and efficiency within various organizations. We leverage existing CCTV networks to enhance security measures, reduce crime incidents, and improve workforce productivity.</p>
+                <p>In response to the significant challenges faced in the aviation industry, our project aims to revolutionize flight safety and efficiency. We leverage existing algorithms to optimize flight paths, enhance safety measures, and improve operational productivity.</p>
 
                 <h2>Problem Statement</h2>
-                <p>Our project addresses the challenge of using existing CCTV networks for crowd management, crime prevention, and workforce monitoring through advanced AI and machine learning technologies.</p>
+                <p>Our project addresses the challenge of using advanced algorithms for optimizing flight paths, providing real-time risk assessment, and suggesting alternative routes to pilots, airlines, and airport authorities for safe and efficient navigation.</p>
 
                 <h2>Our Solution</h2>
-                <p>Developed in collaboration with the Ministry of Railways, our web-based application is a pioneering solution in the context of railway safety and operational efficiency. It provides management authorities with three critical capabilities:</p>
+                <p>Developed in collaboration with leading aviation authorities, our software solution is a pioneering tool in the context of flight safety and operational efficiency. It provides aviation management with three critical capabilities:</p>
                 <ul>
-                    <li><strong>Precise Crowd Management:</strong> We employ Deep Learning algorithms and ML algorithms to accurately count crowds and predict future crowd numbers.</li>
-                    <li><strong>Lost Person Identification:</strong> Our advanced facial recognition technology swiftly locates missing individuals in crowded areas, enhancing safety.</li>
-                    <li><strong>Crime Detection:</strong> Our system can identify potential threats, such as guns or rifles, in video feeds, improving security.</li>
-                    <li><strong>Efficient Work Monitoring:</strong> We offer tools to track employee attendance and working hours, boosting workforce management.</li>
+                    <li><strong>Optimal Flight Path Identification:</strong> We employ sophisticated algorithms to identify the most efficient and safe flight paths, considering weather, air traffic, and other variables.</li>
+                    <li><strong>Real-Time Risk Assessment:</strong> Our system provides real-time analysis of potential risks and suggests alternative routes to mitigate them, ensuring the safety of passengers and crew.</li>
+                    <li><strong>Flight Health Monitoring:</strong> We integrate real-time health metrics tracking based on flight sensor data to monitor the aircraft's condition, enhancing maintenance and operational decisions.</li>
                 </ul>
 
                 <h2>Our Vision</h2>
-                <p>We are committed to creating safer, more efficient communities and workplaces for the future. Our solution combines technical expertise with ethical safeguards to redefine public safety and workforce management.</p>
+                <p>We are committed to creating safer, more efficient skies for the future. Our solution combines technical expertise with real-time data to redefine flight safety and operational management.</p>
             </section>
 
             <footer>
-                <p>&copy; 2023 High-Flyers. All rights reserved.</p>
+                <p>&copy; 2024 Solution made for Airbus Hackathon. All rights reserved.</p>
             </footer>
-
         </Container>
     )
 }
