@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 import L from 'leaflet';
 
 const airplaneIcon = new L.Icon({
-    iconUrl: '../../../assets/images/airplane.png',
+    iconUrl: 'https://icon2.cleanpng.com/20180414/jxw/kisspng-airplane-icon-a5-computer-icons-flight-airplane-5ad24caedae127.4080163515237316308965.jpg',
     iconSize: [32, 32],
     iconAnchor: [16, 16],
 });
@@ -17,8 +17,8 @@ const FlightTracker = ( {positions} ) => {
     const BASE_URL = "http://localhost:5000";
     console.log("ftrck",positions);
     const mapRef = useRef(null);
-    const latitude = positions.length && positions[0].lat ;
-    const longitude = positions.length && positions[0].lon;
+    const latitude = positions &&positions.length && positions[0].lat ;
+    const longitude = positions &&positions.length && positions[0].lon;
     // if(lat ==  0 || lon == 0 ){
     //     lat = latitude;
     //     lon = longitude
@@ -39,7 +39,7 @@ const FlightTracker = ( {positions} ) => {
                         opacity={0.7}
                     />
 
-                    <Marker position={[ positions.length && positions[positions.length - 1].lat, positions.length && positions[positions.length - 1].lon]} icon={airplaneIcon}>
+                    <Marker position={[ positions.length && positions[0].lat, positions.length && positions[0].lon]} icon={airplaneIcon}>
                         <Popup>Airplane</Popup>
                     </Marker>
 

@@ -232,6 +232,12 @@ export function DashHome() {
   const randomLatitude = faker.address.latitude();
   const randomLongitude = faker.address.longitude();
   const [pos, setPos] = useState([])
+  const [vel, setVel] = useState(0)
+  const [longi, setLongi] = useState(0)
+  const [latti, setLatti] = useState(0)
+  const [alti, setAlti] = useState(0)
+
+
 
  
   
@@ -246,7 +252,7 @@ export function DashHome() {
       
       
        const fetchFlightData = () => {
-        const flightCode = 'BG326'; // Hardcoded flight code
+        const flightCode = '6e175'; // Hardcoded flight code BG326      blr -> delhi 
         
     
         axios.get(`http://16.16.122.130/flight-safe?flight=${flightCode}`)
@@ -258,6 +264,11 @@ export function DashHome() {
             // console.log(response.data.data);
             console.log("res data", response.data);
             setPos(response.data.flight_details.data.positions)
+            setVel(response.data.flight_details.data.positions[response.data.flight_details.data.positions.length -1].speedMph)
+            setLongi(response.data.flight_details.data.positions[response.data.flight_details.data.positions.length -1].lon)
+            setLatti(response.data.flight_details.data.positions[response.data.flight_details.data.positions.length -1].lat)
+            setAlti(response.data.flight_details.data.positions[response.data.flight_details.data.positions.length -1].altitudeFt)
+
             console.log("after setting",pos);
 
           })
@@ -295,8 +306,7 @@ export function DashHome() {
                 styles.container.transform = "scale(1)";
               }}
             >
-              <div style={styles.number}>Speed m/s</div>
-              <div>123</div>
+              <div style={styles.number}>Speed: {vel} mph</div>
               {/* <div
                 style={{ ...styles.indicator, ...liveCrowdCountColor }}
               ></div> */}
@@ -315,8 +325,8 @@ export function DashHome() {
                 styles.container.transform = "scale(1)";
               }}
             >
-              <div style={styles.number}>100</div>
-              <div style={styles.label}>Longitude</div>
+              <div style={styles.number}>Longitude: {longi}</div>
+              
               {/* <div
                 style={{ ...styles.indicator, ...armsAndAmmunitionsColor }}
               ></div> */}
@@ -334,8 +344,8 @@ export function DashHome() {
                 styles.container.transform = "scale(1)";
               }}
             >
-              <div style={styles.number}>69</div>
-              <div style={styles.label}>Elevation</div>
+              <div style={styles.number}>Lattitude: {latti}</div>
+              
               {/* <div
                 style={{ ...styles.indicator, ...lostAndFoundCasesColor }}
               ></div> */}
@@ -354,8 +364,8 @@ export function DashHome() {
                 styles.container.transform = "scale(1)";
               }}
             >
-              <div style={styles.number}>1234</div>
-              <div style={styles.label}> 345</div>
+              <div style={styles.number}>Altitude: {alti} ft</div>
+              
               {/* <div
                 style={{ ...styles.indicator, ...totalWorkforceColor }}
               ></div> */}
