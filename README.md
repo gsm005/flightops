@@ -1,3 +1,10 @@
+Hosted- http://13.48.129.108/
+#### Server API
+is_safe (all data)
+http://16.16.122.130/flight-safe?flight=AB123
+flight_details
+http://16.16.122.130/flight-details?flight=AB123
+
 ### Tech Stack Explanation
 
 #### Frontend: ReactJS
@@ -70,13 +77,7 @@
 - **Purpose**: Provides data on flight plans and routes, helping to generate and optimize navigation paths.
 - **Usage**: Utilizes flight plan data to create optimal routes considering safety and efficiency.
 
-#### Server API
 
-is_safe (all data)
-http://16.16.122.130/flight-safe?flight=AB123
-
-flight_details
-http://16.16.122.130/flight-details?flight=AB123
 
 #### OpenMeteo API
 
