@@ -4,9 +4,11 @@ import re, time, json
 from flight_details_api import get_flight_details
 from flight_safe_api import get_flight_safe
 from flight_nearest_airport import get_nearest_airports
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route("/")
 def hello():
