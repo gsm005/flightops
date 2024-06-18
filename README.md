@@ -85,7 +85,3 @@ https://open-meteo.com/en/docs
 
 ## Screenshots
 ![dashboard1](https://github.com/gsm005/flightops/assets/118417410/093baa12-9216-4c22-bd34-80dccf8387d7)
-![dashboard21](https://github.com/gsm005/flightops/assets/118417410/222ae82a-07e2-4045-9203-492e763a92c0)
-![dashboard22](https://github.com/gsm005/flightops/assets/118417410/f438aa2b-3675-40d4-be29-3984ad471330)
-![dashboard23](https://github.com/gsm005/flightops/assets/118417410/78eb53ed-f14b-48bf-a421-60dcbf1290d9)
-![dashboard24](https://github.com/gsm005/flightops/assets/118417410/24efccf5-2fd7-4e0d-8bcb-395099032af7)
