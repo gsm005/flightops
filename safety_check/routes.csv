@@ -1,0 +1,34 @@
+Source,Source_Name,Destination,Destination_Name,Distance
+DEL,Indira Gandhi International Airport,BOM,Chhatrapati Shivaji Maharaj International Airport,1150
+BOM,Chhatrapati Shivaji Maharaj International Airport,BLR,Kempegowda International Airport,840
+DEL,Indira Gandhi International Airport,BLR,Kempegowda International Airport,1740
+DEL,Indira Gandhi International Airport,MAA,Chennai International Airport,1760
+DEL,Indira Gandhi International Airport,HYD,Rajiv Gandhi International Airport,1260
+DEL,Indira Gandhi International Airport,CCU,Netaji Subhas Chandra Bose International Airport,1300
+DEL,Indira Gandhi International Airport,AMD,Sardar Vallabhbhai Patel International Airport,810
+BOM,Chhatrapati Shivaji Maharaj International Airport,MAA,Chennai International Airport,1030
+BOM,Chhatrapati Shivaji Maharaj International Airport,HYD,Rajiv Gandhi International Airport,620
+BOM,Chhatrapati Shivaji Maharaj International Airport,CCU,Netaji Subhas Chandra Bose International Airport,1660
+BOM,Chhatrapati Shivaji Maharaj International Airport,AMD,Sardar Vallabhbhai Patel International Airport,520
+BOM,Chhatrapati Shivaji Maharaj International Airport,PNQ,Pune Airport,120
+BLR,Kempegowda International Airport,MAA,Chennai International Airport,290
+BLR,Kempegowda International Airport,HYD,Rajiv Gandhi International Airport,500
+BLR,Kempegowda International Airport,CCU,Netaji Subhas Chandra Bose International Airport,1550
+BLR,Kempegowda International Airport,AMD,Sardar Vallabhbhai Patel International Airport,1230
+MAA,Chennai International Airport,HYD,Rajiv Gandhi International Airport,520
+MAA,Chennai International Airport,CCU,Netaji Subhas Chandra Bose International Airport,1360
+HYD,Rajiv Gandhi International Airport,CCU,Netaji Subhas Chandra Bose International Airport,1100
+AMD,Sardar Vallabhbhai Patel International Airport,PNQ,Pune Airport,510
+PNQ,Pune Airport,GOI,Goa International Airport,350
+COK,Cochin International Airport,TRV,Trivandrum International Airport,200
+JAI,Jaipur International Airport,IXC,Chandigarh Airport,420
+IXC,Chandigarh Airport,NAG,Dr. Babasaheb Ambedkar International Airport,1180
+NAG,Dr. Babasaheb Ambedkar International Airport,VGA,Vijayawada Airport,460
+VGA,Vijayawada Airport,LKO,Chaudhary Charan Singh International Airport,1040
+LKO,Chaudhary Charan Singh International Airport,BBI,Biju Patnaik International Airport,980
+BBI,Biju Patnaik International Airport,PAT,Jay Prakash Narayan International Airport,620
+PAT,Jay Prakash Narayan International Airport,IXR,Birsa Munda Airport,310
+IXR,Birsa Munda Airport,GAU,Lokpriya Gopinath Bordoloi International Airport,1050
+GAU,Lokpriya Gopinath Bordoloi International Airport,IDR,Devi Ahilya Bai Holkar Airport,1690
+IDR,Devi Ahilya Bai Holkar Airport,SXR,Sheikh ul-Alam International Airport,1370
+SXR,Sheikh ul-Alam International Airport,IXB,Bagdogra Airport,1790
