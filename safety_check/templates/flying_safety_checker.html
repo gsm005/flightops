@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightOps</title>
+    <link rel="stylesheet" type="text/css" href="../static/safety.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Current Weather</h1>
+        <p id="datetime"></p>
+        <p id="location"></p>
+        <p id="weather"></p>
+        <p id="safety"></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            function updateDateTime() {
+                var now = new Date();
+                var datetimeElement = document.getElementById('datetime');
+                datetimeElement.innerText = 'Current Date and Time: ' + now.toLocaleString();
+            }
+
+            function fetchLocationWeather() {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
+
+                    fetch('/get_location_weather', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            latitude: latitude,
+                            longitude: longitude
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        
+                        document.getElementById('location').innerText = `Location: ${data.city}, ${data.latitude}, ${data.longitude}`;
+
+                        document.getElementById('weather').innerText = ` Temperature: ${data.temperature}°C, \nWind Speed: ${data.wind_speed} m/s\n Wind Gust: ${data.wind_gust} m/s\n Precipitation: ${data.precipitation*100}%`;
+
+                        var safetyText = data.is_safe ? 'Safe for flying' : 'Not safe for flying';
+                        document.getElementById('safety').innerText = safetyText;
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+                });
+            }
+
+            updateDateTime();
+            fetchLocationWeather();
+
+            setInterval(updateDateTime, 1000);
+            setInterval(fetchLocationWeather, 60000);
+        });
+
+    </script>
+</body>
+</html>
